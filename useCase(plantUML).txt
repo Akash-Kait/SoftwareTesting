@@ -1,0 +1,29 @@
+@startuml
+left to right direction
+actor User as u
+rectangle {
+  usecase "Play song" as p1
+  usecase "Next song" as p2
+  usecase "Pause song" as p3
+  usecase "Previous song" as p4
+  usecase "Equalizer" as p5
+  usecase "Genre Classifier" as p6
+  usecase "Upload Music" as p7
+  usecase "File converter" as p8
+  usecase "Model" as p9
+}
+actor Site as s
+
+u --> p1
+u --> p2
+u --> p3
+u --> p4
+u --> p5
+u --> p6
+p6 --> p7
+p7 ..> p8: <<include>>
+p8 ..> p9: <<include>>
+p9 --> s
+s --> p6
+
+@enduml

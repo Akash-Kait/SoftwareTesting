@@ -1,0 +1,24 @@
+@startuml
+
+actor Actor as User
+
+User -> MusicInterface: Play selected song
+MusicInterface -> MusicPlayer: Search song
+
+alt if song found
+    MusicPlayer --> MusicInterface: Select song
+    MusicInterface --> User: Start song
+
+else else
+    MusicPlayer --> MusicInterface: Error
+    MusicInterface --> User: Song not found
+
+end
+
+User -> MusicInterface : Find genre of song
+MusicInterface -> GenreClassifier: Classify song
+GenreClassifier --> MusicInterface: Classified genre
+MusicInterface --> User: Display Genre
+
+
+@enduml
