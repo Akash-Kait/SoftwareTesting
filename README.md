@@ -1,4 +1,4 @@
-# Software-Testing-Assignments-18103055
+# Software-Testing-Assignment-18103055
 This is the readme file for *Software Testing Assignments*<br />
 ***Diagrams***<br />
 *Sequence Diagram*<br />
