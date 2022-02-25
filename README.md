@@ -1,5 +1,5 @@
 # Software-Testing-Assignment-18103055
-This is the readme file for *Software Testing Assignments*<br />
+This is the readme file for *Software Testing Assignment*<br />
 ***Diagrams***<br />
 *Sequence Diagram*<br />
 ![Sequence Diagram](https://github.com/Akash-Kait/SoftwareTesting/blob/main/sequenceDiagram.png)<br /><br /><br /><br />
