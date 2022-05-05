@@ -1,0 +1,16 @@
+digraph "clusterifelse.py" {
+	graph [label="ifelse.py"]
+	1 [label="r = 10
+if r == 11:
+"]
+	2 [label="print('hi')
+"]
+	"2_calls" [label=print shape=box]
+	2 -> "2_calls" [label=calls style=dashed]
+	1 -> 2 [label="r == 11"]
+	4 [label="print('bye')
+"]
+	"4_calls" [label=print shape=box]
+	4 -> "4_calls" [label=calls style=dashed]
+	1 -> 4 [label="(r != 11)"]
+}

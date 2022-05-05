@@ -1,0 +1,15 @@
+digraph "clusterwhile.py" {
+	graph [label="while.py"]
+	1 [label="i = 1
+"]
+	2 [label="while i < 6:
+"]
+	3 [label="print(i)
+i += 1
+"]
+	"3_calls" [label=print shape=box]
+	3 -> "3_calls" [label=calls style=dashed]
+	3 -> 2 [label=""]
+	2 -> 3 [label="i < 6"]
+	1 -> 2 [label=""]
+}
